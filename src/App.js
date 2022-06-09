@@ -14,6 +14,12 @@ function App() {
   // alienSize should be a number that starts out as 10
   // traffic is complicated. It should be an array of strings that starts out as ['car', 'truck']
 
+  function handleAddVehicle(vehicle) {
+    vehicles.push(vehicle);
+
+    setVehicles(vehicles.slice());
+  }
+
   return (
     <div className="App">
       <div className="fight">
@@ -56,13 +62,13 @@ function App() {
       <div className='buttons'>
         {/* This part is weird */}
         {/* On click, you should set the traffic in state to be a copy of the same array that's already in state, but immutably add a 'car' to the end */}
-        <button>Car</button>
+        <button onClick={() => handleAddVehicle('🚗')}>Car</button>
         {/* On click, you should set the traffic in state to be a copy of the same array that's already in state, but immutably add a 'bus' to the end */}
-        <button>Bus</button>
+        <button onClick={() => handleAddVehicle('🚌')}>Bus</button>
         {/* On click, you should set the traffic in state to be a copy of the same array that's already in state, but immutably add a 'truck' to the end */}
-        <button>Truck</button>
+        <button onClick={() => handleAddVehicle('🛻')}>Truck</button>
         {/* On click, you should set the traffic in state to be a copy of the same array that's already in state, but immutably add a 'motorcycle' to the end */}
-        <button>Motorcycle</button>
+        <button onClick={() => handleAddVehicle('🏍')}>Motorcycle</button>
       </div>
 
     </div>
