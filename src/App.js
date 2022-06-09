@@ -7,7 +7,7 @@ function App() {
   const [lightColor, setLightColor] = useState('red');
   const [alienSize, setAlienSize] = useState(10);
   const [lizardSize, setLizardSize] = useState(10);
-  const [vehicles, setVehicles] = useState(['🚗', '🛻', '🦼']);
+  const [vehicles, setVehicles] = useState(['car', 'truck', 'bus']);
   // track the following state with a few useState hooks:
   // lightColor should be a string that starts out as 'red'
   // lizardSize should be a number that starts out as 10
@@ -61,13 +61,13 @@ function App() {
       <div className='buttons'>
         {/* This part is weird */}
         {/* On click, you should set the traffic in state to be a copy of the same array that's already in state, but immutably add a 'car' to the end */}
-        <button onClick={() => handleAddVehicle('🚗')}>Car</button>
+        <button onClick={() => handleAddVehicle('car')}>Car</button>
         {/* On click, you should set the traffic in state to be a copy of the same array that's already in state, but immutably add a 'bus' to the end */}
-        <button onClick={() => handleAddVehicle('🚌')}>Bus</button>
+        <button onClick={() => handleAddVehicle('bus')}>Bus</button>
         {/* On click, you should set the traffic in state to be a copy of the same array that's already in state, but immutably add a 'truck' to the end */}
-        <button onClick={() => handleAddVehicle('🛻')}>Truck</button>
+        <button onClick={() => handleAddVehicle('truck')}>Truck</button>
         {/* On click, you should set the traffic in state to be a copy of the same array that's already in state, but immutably add a 'motorcycle' to the end */}
-        <button onClick={() => handleAddVehicle('🏍')}>Motorcycle</button>
+        <button onClick={() => handleAddVehicle('motorcycle')}>Motorcycle</button>
       </div>
 
     </div>

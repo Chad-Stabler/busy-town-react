@@ -1,10 +1,11 @@
 import React from 'react';
+import Vehicle from './Vehicle';
 
 export default function VehicleList({ vehicles }) {
   return (
     <div className="traffic">
       {
-        vehicles.map((vehicle, i) => <p key={vehicle + i}>{vehicle}</p>)
+        vehicles.map((vehicle, i) => <Vehicle vehicle={vehicle} key={vehicle + i} />)
       }
       {/* this component takes in a prop called vehicles, which is an array of vehicle strings */}
       {/* map through the vehicles array in props */}
