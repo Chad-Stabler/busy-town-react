@@ -4,10 +4,10 @@ import TrafficLight from './TrafficLight';
 import { useState } from 'react';
 
 function App() {
-  const [lightColor, setLightColor] = useState('red');
-  const [animalSize, setAnimalSize] = useState({alien: 10, lizard: 10});
-  const [vehicles, setVehicles] = useState(['🚗', '🛻', '🦼']);
-  // track the following state with a few useState hooks:
+  // const [lightColor, setLightColor] = useState('red');
+  // const [animalSize, setAnimalSize] = useState();
+  // const [vehicles, setVehicles] = useState(['🚗', '🛻', '🦼']);
+  // // track the following state with a few useState hooks:
   // lightColor should be a string that starts out as 'red'
   // lizardSize should be a number that starts out as 10
   // alienSize should be a number that starts out as 10
