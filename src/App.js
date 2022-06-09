@@ -56,8 +56,7 @@ function App() {
       {/* 
       the VehicleList component takes in one prop: vehicles.
       This prop should be an array of strings like ['car', 'truck', 'truck', 'car', 'bus'].
-      Do you have something like that in state that you could pass as a vehicles prop? 
-      */}
+      Do you have something like that in state that you could pass as a vehicles prop? */}
       <VehicleList vehicles={vehicles}/>
       <div className='buttons'>
         {/* This part is weird */}
