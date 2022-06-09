@@ -1,7 +1,7 @@
 import './App.css';
-import VehicleList from './VehicleList';
-import TrafficLight from './TrafficLight';
-import { useState } from 'react';
+// import VehicleList from './VehicleList';
+// import TrafficLight from './TrafficLight';
+// import { useState } from 'react';
 
 function App() {
   // const [lightColor, setLightColor] = useState('red');
